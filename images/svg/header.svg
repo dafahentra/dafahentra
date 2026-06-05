@@ -241,13 +241,13 @@ text.descText > tspan:nth-child(53) { animation-delay: 3.04s; }
 </g>
 
 <!-- Container box -->
-<rect class="headerRect" x="25" y="0.9" width="70" height="7.3" rx="1" />
+<rect class="headerRect" x="25" y="0.9" width="70" height="8.0" rx="1" />
 
 <!-- Name with CSS typing animation -->
 <text class="nameText" x="60" y="4.8" text-anchor="middle" font-family="Courier New" font-size="4px" fill="white" font-weight="bold"><tspan>D</tspan><tspan>A</tspan><tspan>F</tspan><tspan>A</tspan><tspan> </tspan><tspan>H</tspan><tspan>E</tspan><tspan>N</tspan><tspan>T</tspan><tspan>R</tspan><tspan>A</tspan><tspan dy="-0.6">_</tspan></text>
 
 <!-- Description with CSS fade-in -->
-<text class="descText" x="60" y="7.0" text-anchor="middle" font-family="Helvetica" font-size="1.5px" fill="white" opacity="0.8" font-style="italic"><tspan>D</tspan><tspan>a</tspan><tspan>t</tspan><tspan>a</tspan><tspan> </tspan><tspan>A</tspan><tspan>n</tspan><tspan>a</tspan><tspan>l</tspan><tspan>y</tspan><tspan>s</tspan><tspan>i</tspan><tspan>s</tspan><tspan> </tspan><tspan>|</tspan><tspan> </tspan><tspan>P</tspan><tspan>o</tspan><tspan>r</tspan><tspan>t</tspan><tspan>f</tspan><tspan>o</tspan><tspan>l</tspan><tspan>i</tspan><tspan>o</tspan><tspan> </tspan><tspan>O</tspan><tspan>p</tspan><tspan>t</tspan><tspan>i</tspan><tspan>m</tspan><tspan>i</tspan><tspan>z</tspan><tspan>a</tspan><tspan>t</tspan><tspan>i</tspan><tspan>o</tspan><tspan>n</tspan><tspan> </tspan><tspan>|</tspan><tspan> </tspan><tspan>S</tspan><tspan>t</tspan><tspan>o</tspan><tspan>c</tspan><tspan>k</tspan><tspan> </tspan><tspan>M</tspan><tspan>a</tspan><tspan>r</tspan><tspan>k</tspan><tspan>e</tspan><tspan>t</tspan></text>
+<text class="descText" x="60" y="7.7" text-anchor="middle" font-family="Helvetica" font-size="1.5px" fill="white" opacity="0.8" font-style="italic"><tspan>D</tspan><tspan>a</tspan><tspan>t</tspan><tspan>a</tspan><tspan> </tspan><tspan>A</tspan><tspan>n</tspan><tspan>a</tspan><tspan>l</tspan><tspan>y</tspan><tspan>s</tspan><tspan>i</tspan><tspan>s</tspan><tspan> </tspan><tspan>|</tspan><tspan> </tspan><tspan>P</tspan><tspan>o</tspan><tspan>r</tspan><tspan>t</tspan><tspan>f</tspan><tspan>o</tspan><tspan>l</tspan><tspan>i</tspan><tspan>o</tspan><tspan> </tspan><tspan>O</tspan><tspan>p</tspan><tspan>t</tspan><tspan>i</tspan><tspan>m</tspan><tspan>i</tspan><tspan>z</tspan><tspan>a</tspan><tspan>t</tspan><tspan>i</tspan><tspan>o</tspan><tspan>n</tspan><tspan> </tspan><tspan>|</tspan><tspan> </tspan><tspan>S</tspan><tspan>t</tspan><tspan>o</tspan><tspan>c</tspan><tspan>k</tspan><tspan> </tspan><tspan>M</tspan><tspan>a</tspan><tspan>r</tspan><tspan>k</tspan><tspan>e</tspan><tspan>t</tspan></text>
 
 <!-- Greeting text -->
 <text x="2" y="21.5" font-family="Helvetica" font-size="3.5px" fill="#888888" font-weight="bold">Hi there!</text>

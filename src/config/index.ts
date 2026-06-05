@@ -6,7 +6,7 @@ dotenv.config();
 /**
  * Callback URL for Spotify authorization.
  */
-export const CALLBACK_URL = 'http://localhost:3000/api/auth';
+export const CALLBACK_URL = 'https://dafahentra.netlify.app/api/auth';
 
 /**
  * Empty FEN used for empty games.

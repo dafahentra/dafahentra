@@ -1,8 +1,8 @@
 // Packages
 import {
-  VercelRequest,
-  VercelResponse,
-} from '@vercel/node';
+  Request,
+  Response,
+} from 'express';
 import {
   decode,
   ParsedUrlQuery,
@@ -22,12 +22,12 @@ import { IAudioFeaturesResponse } from '../../types/spotify';
 /**
  * Returns an image displaying my current playback state, with nice music bars.
  *
- * @param {VercelRequest} req Request for image.
- * @param {VercelResponse} res Response to request.
+ * @param {Request} req Request for image.
+ * @param {Response} res Response to request.
  */
 export default async function (
-  req: VercelRequest,
-  res: VercelResponse,
+  req: Request,
+  res: Response,
 ) {
   try {
     // Get current playing item.

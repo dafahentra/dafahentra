@@ -1,8 +1,8 @@
 // Packages
 import {
-  VercelRequest,
-  VercelResponse,
-} from '@vercel/node';
+  Request,
+  Response,
+} from 'express';
 import { renderToString } from 'react-dom/server';
 
 // Local Imports
@@ -21,12 +21,12 @@ import { IConvertedGameObject } from '../../types/chess';
 /**
  * Returns an image displaying three of my current chess games from Chess.com.
  *
- * @param {VercelRequest} req Request for image.
- * @param {VercelResponse} res Response to request.
+ * @param {Request} req Request for image.
+ * @param {Response} res Response to request.
  */
 export default async function (
-  req: VercelRequest,
-  res: VercelResponse,
+  req: Request,
+  res: Response,
 ) {
   const pieceImages: object = await getPieces();
 

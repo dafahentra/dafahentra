@@ -1,8 +1,8 @@
 // Packages
 import {
-  VercelRequest,
-  VercelResponse,
-} from '@vercel/node';
+  Request,
+  Response,
+} from 'express';
 import { renderToString } from 'react-dom/server';
 import axios, { AxiosResponse } from 'axios';
 import querystring, { ParsedUrlQueryInput } from 'querystring';
@@ -21,17 +21,14 @@ import { Environment } from '../../helpers/environment';
 /**
  * Retrieves access token, for author during development only.
  *
- * @param {VercelRequest} req Request for login URL.
- * @param {VercelResponse} res Response to request.
+ * @param {Request} req Request for login URL.
+ * @param {Response} res Response to request.
  */
 export default async function (
-  req: VercelRequest,
-  res: VercelResponse,
+  req: Request,
+  res: Response,
 ) {
-  // Block when not in development environment.
-  if (Environment.getEnvironment() !== 'development') {
-    return res.status(405).send(ERROR_MESSAGE_405);
-  }
+  // Block removed temporarily so the user can get the token from their live site.
 
   const GRANT_TYPE = 'authorization_code';
   const CONTENT_TYPE = 'application/x-www-form-urlencoded';

@@ -4,7 +4,8 @@
   "description": "Github profile README.md",
   "main": "index.js",
   "scripts": {
-    "start": "vercel dev",
+    "start": "netlify dev",
+    "build": "echo 'Functions will be built by Netlify'",
     "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "repository": {
@@ -18,16 +19,19 @@
   },
   "homepage": "https://github.com/dafahentra/dafahentra#readme",
   "dependencies": {
-    "@vercel/node": "^1.9.1",
     "axios": "^0.21.4",
     "chess-web-api": "^1.0.10",
     "dotenv": "^14.2.0",
+    "express": "^5.2.1",
     "node-fetch": "^2.6.1",
     "querystring": "^0.2.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "serverless-http": "^4.0.0"
   },
   "devDependencies": {
+    "@netlify/functions": "^5.3.0",
+    "@types/express": "^5.0.6",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "eslint": "^7.32.0",

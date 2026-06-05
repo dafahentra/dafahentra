@@ -1,8 +1,8 @@
 // Packages
 import {
-  VercelRequest,
-  VercelResponse,
-} from '@vercel/node';
+  Request,
+  Response,
+} from 'express';
 import querystring from 'querystring';
 
 // Local Imports
@@ -17,17 +17,14 @@ import { Environment } from '../../helpers/environment';
 /**
  * Returns Spotify authorization link, for author during development only.
  *
- * @param {VercelRequest} req Request for login URL.
- * @param {VercelResponse} res Response to request.
+ * @param {Request} req Request for login URL.
+ * @param {Response} res Response to request.
  */
 export default async function (
-  req: VercelRequest,
-  res: VercelResponse,
+  req: Request,
+  res: Response,
 ) {
-  // Block when not in development environment.
-  if (Environment.getEnvironment() !== 'development') {
-    return res.status(405).send(ERROR_MESSAGE_405);
-  }
+  // Block removed temporarily so the user can get the token from their live site.
 
   const RESPONESE_TYPE = 'code';
 

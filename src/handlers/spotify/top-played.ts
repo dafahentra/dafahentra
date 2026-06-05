@@ -1,8 +1,8 @@
 // Packages
 import {
-  VercelRequest,
-  VercelResponse,
-} from '@vercel/node';
+  Request,
+  Response,
+} from 'express';
 import { renderToString } from 'react-dom/server';
 
 // Local Imports
@@ -24,12 +24,12 @@ import {
 /**
  * Returns an image displaying my top five played tracks for three various time ranges.
  *
- * @param {VercelRequest} req Request for image.
- * @param {VercelResponse} res Response to request.
+ * @param {Request} req Request for image.
+ * @param {Response} res Response to request.
  */
 export default async function (
-  req: VercelRequest,
-  res: VercelResponse,
+  req: Request,
+  res: Response,
 ) {
   try {
     // Retrieving top played tracks from spotify.

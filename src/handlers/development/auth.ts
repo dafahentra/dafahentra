@@ -1,4 +1,8 @@
 // Packages
+import {
+  VercelRequest,
+  VercelResponse,
+} from '@vercel/node';
 import { renderToString } from 'react-dom/server';
 import axios, { AxiosResponse } from 'axios';
 import querystring, { ParsedUrlQueryInput } from 'querystring';
@@ -17,12 +21,12 @@ import { Environment } from '../../helpers/environment';
 /**
  * Retrieves access token, for author during development only.
  *
- * @param {any} req Request for login URL.
- * @param {any} res Response to request.
+ * @param {VercelRequest} req Request for login URL.
+ * @param {VercelResponse} res Response to request.
  */
 export default async function (
-  req: any,
-  res: any,
+  req: VercelRequest,
+  res: VercelResponse,
 ) {
   // Block when not in development environment.
   if (Environment.getEnvironment() !== 'development') {

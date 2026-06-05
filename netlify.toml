@@ -1,8 +1,0 @@
-[build]
-  functions = "netlify/functions"
-
-# Redirect /api/* to Netlify Functions so URLs stay the same
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200

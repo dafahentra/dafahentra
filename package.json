@@ -1,16 +1,24 @@
 {
-  "name": "dafa-hentra-profile-page",
-  "version": "1.0.0",
-  "description": "Github profile README.md — Dafa Hentra",
+  "name": "andyruwruw-profile-page",
+  "version": "1.2.0",
+  "description": "Github profile README.md",
   "main": "index.js",
   "scripts": {
-    "start": "netlify dev",
+    "start": "vercel dev",
     "lint": "eslint . --ext .ts,.tsx --fix"
   },
-  "author": "Dafa Hentra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyruwruw/andyruwruw.git"
+  },
+  "author": "Andrew Young",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyruwruw/andyruwruw/issues"
+  },
+  "homepage": "https://github.com/andyruwruw/andyruwruw#readme",
   "dependencies": {
-    "@netlify/functions": "^2.0.0",
+    "@vercel/node": "^1.9.1",
     "axios": "^0.21.4",
     "chess-web-api": "^1.0.10",
     "dotenv": "^14.2.0",

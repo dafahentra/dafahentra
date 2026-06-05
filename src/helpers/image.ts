@@ -1,4 +1,5 @@
 // Packages
+import { VercelResponse } from '@vercel/node';
 import fetch from 'node-fetch';
 
 // Local Imports
@@ -8,12 +9,11 @@ import {
 } from '../config';
 
 /**
- * Sets headers for a response object to return an SVG image.
- * Compatible with any object that implements setHeader().
+ * Sets headers for Response object to return an image.
  *
- * @param {any} res Response object (MockResponse or Express-like).
+ * @param {VercelResponse} res Response to request.
  */
-export const convertToImageResponse = (res: any) => {
+export const convertToImageResponse = (res: VercelResponse) =>{
   res.setHeader(...IMAGE_RESPONSE_HEADERS);
   res.setHeader(...CACHE_CONTROL_RESPONSE_HEADERS);
 }

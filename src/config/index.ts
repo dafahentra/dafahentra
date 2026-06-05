@@ -5,10 +5,8 @@ dotenv.config();
 
 /**
  * Callback URL for Spotify authorization.
- * Netlify dev runs on port 8888 by default.
- * Register this exact URL as a Redirect URI on your Spotify Developer Dashboard.
  */
-export const CALLBACK_URL = 'http://localhost:8888/api/auth';
+export const CALLBACK_URL = 'http://localhost:3000/api/auth';
 
 /**
  * Empty FEN used for empty games.

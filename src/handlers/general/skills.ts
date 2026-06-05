@@ -1,4 +1,8 @@
 // Packages
+import {
+  VercelRequest,
+  VercelResponse,
+} from '@vercel/node';
 import { renderToString } from 'react-dom/server';
 
 // Local Imports
@@ -9,12 +13,12 @@ import { Skills } from '../../components/skills/Skills';
 /**
  * Returns an image displaying icons of skills and languages.
  *
- * @param {any} req Request for image.
- * @param {any} res Response to request.
+ * @param {VercelRequest} req Request for image.
+ * @param {VercelResponse} res Response to request.
  */
 export default async function (
-  req: any,
-  res: any,
+  req: VercelRequest,
+  res: VercelResponse,
 ) {
   // Hey! I'm returning an image!
   convertToImageResponse(res);

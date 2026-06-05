@@ -1,9 +1,5 @@
 <img src="images/svg/header.svg"></img>
-hello! i'm Dafa Hentra, here's a little about me:
 
-<h1>
-  i really like music :headphones:
-</h1>
 
 <!-- Nothing weird to see here -->
 <p align="center">
@@ -20,9 +16,7 @@ hello! i'm Dafa Hentra, here's a little about me:
 
 
 
-<h1>
-  i'm a vue.js fanboy, but i do some other stuff too :hammer:
-</h1>
+
 
 <p align="center">
   <img src="https://dapekreadmd.netlify.app/api/skills">

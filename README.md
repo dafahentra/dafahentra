@@ -7,16 +7,16 @@ hello! i'm Dafa Hentra, here's a little about me:
 
 <!-- Nothing weird to see here -->
 <p align="center">
-  <a href="https://readme.dafahentra.com/api/now-playing?open">
+  <a href="https://dapekreadmd.netlify.app/api/now-playing?open">
     <!-- Music bars move to the beat and are colored based on the track's happiness, danceability and energy! -->
     <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/now-playing.svg">
-    <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/now-playing"> -->
+    <!-- This is how you'd make the call dynamically <img src="https://dapekreadmd.netlify.app/api/now-playing"> -->
   </a>
 </p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/top-played.svg">
-  <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/top-played"> -->
+  <!-- This is how you'd make the call dynamically <img src="https://dapekreadmd.netlify.app/api/top-played"> -->
 </p>
  
 
@@ -29,5 +29,5 @@ hello! i'm Dafa Hentra, here's a little about me:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/skills.svg">
-  <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/skills"> -->
+  <!-- This is how you'd make the call dynamically <img src="https://dapekreadmd.netlify.app/api/skills"> -->
 </p>

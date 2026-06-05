@@ -1,4 +1,4 @@
-<img src="images/svg/header.svg?v=10"></img>
+<img src="images/svg/header.svg?v=11"></img>
 
 
 <!-- Nothing weird to see here -->

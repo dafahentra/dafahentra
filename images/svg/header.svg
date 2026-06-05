@@ -107,15 +107,15 @@ rect.headerRect:hover {
 }
 /* Typing animation - CSS based for Safari compatibility */
 @keyframes showChar {
-  to { visibility: visible; }
+  to { font-size: 4px; }
 }
 @keyframes cursorBlink {
-  0%, 100% { visibility: visible; }
-  50% { visibility: hidden; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* Name typing - chars appear one by one */
-text.nameText > tspan { visibility: hidden; animation: showChar 0.01s forwards; }
+text.nameText > tspan { font-size: 0px; animation: showChar 0.01s forwards; }
 text.nameText > tspan:nth-child(1) { animation-delay: 0.20s; }
 text.nameText > tspan:nth-child(2) { animation-delay: 0.35s; }
 text.nameText > tspan:nth-child(3) { animation-delay: 0.50s; }
@@ -127,10 +127,24 @@ text.nameText > tspan:nth-child(8) { animation-delay: 1.25s; }
 text.nameText > tspan:nth-child(9) { animation-delay: 1.40s; }
 text.nameText > tspan:nth-child(10) { animation-delay: 1.55s; }
 text.nameText > tspan:nth-child(11) { animation-delay: 1.70s; }
-text.nameText > tspan:last-child { visibility: visible; animation: cursorBlink 0.8s infinite; }
+text.nameText > tspan:last-child { font-size: 4px; animation: cursorBlink 0.8s infinite; }
 
-/* Description appears after name typing finishes */
-text.descText { visibility: hidden; animation: showChar 0.01s 2.0s forwards; }
+/* Description expands horizontally from the center */
+@keyframes expandFromCenter {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
+}
+text.descText {
+  transform-origin: 60px 7px;
+  animation: expandFromCenter 1.2s cubic-bezier(0.16, 1, 0.3, 1) 2.0s forwards;
+  opacity: 0;
+}
 
 </style>
 

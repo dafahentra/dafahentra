@@ -92,8 +92,8 @@ img:not([src]) {
 .bar {
   --offset: 0;
 
-  animation: bars ${ audioFeatures ? (audioFeatures.tempo / 60) * 1 : 1 }s ease calc(var(--offset) * -.5s) infinite;
-  background: rgba(${ audioFeatures ? audioFeatures.energy * 255 : 255 }, ${ audioFeatures ? audioFeatures.valence * 255 : 255 }, ${ audioFeatures ? audioFeatures.danceability * 255 : 255 }, .7);
+  animation: bars ${ audioFeatures?.tempo ? (audioFeatures.tempo / 60) * 1 : 2 }s ease calc(var(--offset) * -.5s) infinite;
+  background: rgba(${ audioFeatures?.energy ? audioFeatures.energy * 255 : 100 }, ${ audioFeatures?.valence ? audioFeatures.valence * 255 : 255 }, ${ audioFeatures?.danceability ? audioFeatures.danceability * 255 : 100 }, .7);
   height: 10px;
   margin: 2px 0;
   width: 50px;

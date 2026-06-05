@@ -1,4 +1,4 @@
-<!-- Repo has been edited to be static, see comments for dynamic calls. -->
+<img src="images/svg/header.svg"></img>
 hello! i'm Dafa Hentra, here's a little about me:
 
 <h1>

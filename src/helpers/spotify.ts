@@ -16,7 +16,7 @@ import {
  * @returns {Promise<IConvertedTrackObject>} Converted track object.
  */
  export const convertTrackToMinimumData = async (track: ITrackObject): Promise<IConvertedTrackObject> => {
-  let albumArtUrl = 'https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/src/assets/images/default-album-art.png';
+  let albumArtUrl = 'https://raw.githubusercontent.com/dafahentra/dafahentra/master/src/assets/images/default-album-art.png';
   if ('album' in track
     && 'images' in track.album
     && track.album.images.length) {

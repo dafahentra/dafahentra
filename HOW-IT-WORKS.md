@@ -13,7 +13,7 @@ The README.md is made dynamic by creating a back-end API that returns images. By
 ```
 <!-- README.md -->
 
-<img src="https://andyruwruw.vercel.app/api/top-played">
+<img src="https://dafahentra.vercel.app/api/top-played">
 ```
 
 From the server, each function requests the data it needs, builds a react component, and returns it as an SVG.
@@ -22,7 +22,7 @@ The server is hosted on [Vercel](https://vercel.com/). By creating a folder call
 
 # Making your own
 
-Most important file is [ConvertSVG.tsx](https://github.com/andyruwruw/andyruwruw/blob/master/components/ConvertSVG.tsx), which takes any children components and wraps them in `<svg>` and `<foreignObject>` tags. 
+Most important file is [ConvertSVG.tsx](https://github.com/dafahentra/dafahentra/blob/master/components/ConvertSVG.tsx), which takes any children components and wraps them in `<svg>` and `<foreignObject>` tags. 
 
 Each React component is wrapped in a `<ConvertSVG>`.
 ```
@@ -76,7 +76,7 @@ More on getting that refresh token [here](https://developer.spotify.com/document
 
 I made and endpoint to easily allow you to retrieve your refresh token. Simply clone this repository and register an application with [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/login).
 
-Once you have that, create a `.env` in this repository's root directory ([example](https://github.com/andyruwruw/andyruwruw/blob/master/.env.example)) with these fields:
+Once you have that, create a `.env` in this repository's root directory ([example](https://github.com/dafahentra/dafahentra/blob/master/.env.example)) with these fields:
 
 ```
 # Spotify Application
@@ -132,7 +132,7 @@ Sadly, IT DOESN'T WORK with my SVG images.
 
 Best solution is to pick colors that work for dark and light modes, making it arguably look worse for light mode, but at least be viewable for dark mode.
 
-I'll post any updates on this issue [here](https://github.com/andyruwruw/andyruwruw/issues/3), and an official Github issue is posted [here](https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981).
+I'll post any updates on this issue [here](https://github.com/dafahentra/dafahentra/issues/3), and an official Github issue is posted [here](https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981).
 
 # Mock Data
 

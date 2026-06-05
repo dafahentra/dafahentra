@@ -1,5 +1,5 @@
 {
-  "name": "andyruwruw-profile-page",
+  "name": "dafahentra-profile-page",
   "version": "1.2.0",
   "description": "Github profile README.md",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andyruwruw/andyruwruw.git"
+    "url": "git+https://github.com/dafahentra/dafahentra.git"
   },
   "author": "Andrew Young",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andyruwruw/andyruwruw/issues"
+    "url": "https://github.com/dafahentra/dafahentra/issues"
   },
-  "homepage": "https://github.com/andyruwruw/andyruwruw#readme",
+  "homepage": "https://github.com/dafahentra/dafahentra#readme",
   "dependencies": {
     "@vercel/node": "^1.9.1",
     "axios": "^0.21.4",

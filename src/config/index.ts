@@ -16,7 +16,7 @@ export const EMPTY_CHESS_BOARD_FEN = '8/8/8/8/8/8/8/8/';
 /**
  * Location of images.
  */
-export const GITHUB_CHESS_IMAGES_DIRECTORY_URL = 'https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/src/assets/images/';
+export const GITHUB_CHESS_IMAGES_DIRECTORY_URL = 'https://raw.githubusercontent.com/dafahentra/dafahentra/master/src/assets/images/';
 
 /**
  * Spotify authorization endpoint.

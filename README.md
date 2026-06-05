@@ -1,5 +1,5 @@
 <!-- Repo has been edited to be static, see comments for dynamic calls. -->
-hello! here's a little about me:
+hello! i'm Dafa Hentra, here's a little about me:
 
 <h1>
   i really like music :headphones:
@@ -7,16 +7,16 @@ hello! here's a little about me:
 
 <!-- Nothing weird to see here -->
 <p align="center">
-  <a href="https://readme.andyruwruw.com/api/now-playing?open">
+  <a href="https://readme.dafahentra.com/api/now-playing?open">
     <!-- Music bars move to the beat and are colored based on the track's happiness, danceability and energy! -->
-    <img src="https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/example/now-playing.svg">
-    <!-- This is how you'd make the call dynamically <img src="https://readme.andyruwruw.com/api/now-playing"> -->
+    <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/now-playing.svg">
+    <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/now-playing"> -->
   </a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/example/top-played.svg">
-  <!-- This is how you'd make the call dynamically <img src="https://readme.andyruwruw.com/api/top-played"> -->
+  <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/top-played.svg">
+  <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/top-played"> -->
 </p>
  
 <p align="center">
@@ -31,9 +31,9 @@ hello! here's a little about me:
 </h1>
 
 <p align="center">
-  <a href="https://www.chess.com/member/andyruwruw">
-    <img src="https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/example/chess-games.svg">
-    <!-- This is how you'd make the call dynamically <img src="https://readme.andyruwruw.com/api/chess-games"> -->
+  <a href="https://www.chess.com/member/dafahentra">
+    <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/chess-games.svg">
+    <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/chess-games"> -->
   </a>
 </p>
 
@@ -48,6 +48,6 @@ hello! here's a little about me:
 </h1>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andyruwruw/andyruwruw/master/example/skills.svg">
-  <!-- This is how you'd make the call dynamically <img src="https://readme.andyruwruw.com/api/skills"> -->
+  <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/skills.svg">
+  <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/skills"> -->
 </p>

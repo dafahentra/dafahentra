@@ -106,18 +106,34 @@ rect.headerRect:hover {
     fill: none;
   }
 }
-@keyframes underline_move {
-  to {
-    transform: translateX(-39px);
-  }}
-
-g.typingUnderline rect {
-   animation: 
-    blink 0.5s infinite, 
-    underline_move 4s steps(24, end) forwards;
+/* Typing animation - CSS based for Safari compatibility */
+@keyframes showChar {
+  to { visibility: visible; }
 }
-</style>
+@keyframes cursorBlink {
+  0%, 100% { visibility: visible; }
+  50% { visibility: hidden; }
+}
 
+/* Name typing - chars appear one by one */
+text.nameText > tspan { visibility: hidden; animation: showChar 0.01s forwards; }
+text.nameText > tspan:nth-child(1) { animation-delay: 0.20s; }
+text.nameText > tspan:nth-child(2) { animation-delay: 0.35s; }
+text.nameText > tspan:nth-child(3) { animation-delay: 0.50s; }
+text.nameText > tspan:nth-child(4) { animation-delay: 0.65s; }
+text.nameText > tspan:nth-child(5) { animation-delay: 0.80s; }
+text.nameText > tspan:nth-child(6) { animation-delay: 0.95s; }
+text.nameText > tspan:nth-child(7) { animation-delay: 1.10s; }
+text.nameText > tspan:nth-child(8) { animation-delay: 1.25s; }
+text.nameText > tspan:nth-child(9) { animation-delay: 1.40s; }
+text.nameText > tspan:nth-child(10) { animation-delay: 1.55s; }
+text.nameText > tspan:nth-child(11) { animation-delay: 1.70s; }
+text.nameText > tspan:last-child { visibility: visible; animation: cursorBlink 0.8s infinite; }
+
+/* Description appears after name typing finishes */
+text.descText { visibility: hidden; animation: showChar 0.01s 2.0s forwards; }
+
+</style>
 
 
  <defs> 
@@ -168,11 +184,11 @@ g.typingUnderline rect {
   <!-- Container box -->
   <rect class="headerRect" x="25" y="0.9" width="70" height="7.3" rx="1" />
   
-  <!-- Name with typing animation -->
-  <text x="60" y="4.8" text-anchor="middle" font-family="Courier New" font-size="4px" fill="white" font-weight="bold"><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.20s" fill="freeze"/>D</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.35s" fill="freeze"/>A</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.50s" fill="freeze"/>F</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.65s" fill="freeze"/>A</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.80s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="0.95s" fill="freeze"/>H</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="1.10s" fill="freeze"/>E</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="1.25s" fill="freeze"/>N</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="1.40s" fill="freeze"/>T</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="1.55s" fill="freeze"/>R</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="1.70s" fill="freeze"/>A</tspan><tspan><animate attributeName="visibility" values="visible;hidden;visible" dur="0.8s" repeatCount="indefinite"/>_</tspan></text>
+  <!-- Name with CSS typing animation -->
+  <text class="nameText" x="60" y="4.8" text-anchor="middle" font-family="Courier New" font-size="4px" fill="white" font-weight="bold"><tspan>D</tspan><tspan>A</tspan><tspan>F</tspan><tspan>A</tspan><tspan> </tspan><tspan>H</tspan><tspan>E</tspan><tspan>N</tspan><tspan>T</tspan><tspan>R</tspan><tspan>A</tspan><tspan>_</tspan></text>
   
-  <!-- Description with typing animation -->
-  <text x="60" y="7.0" text-anchor="middle" font-family="Helvetica" font-size="1.5px" fill="white" opacity="0.8" font-style="italic"><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.20s" fill="freeze"/>D</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.25s" fill="freeze"/>a</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.30s" fill="freeze"/>t</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.35s" fill="freeze"/>a</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.40s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.45s" fill="freeze"/>A</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.50s" fill="freeze"/>n</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.55s" fill="freeze"/>a</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.60s" fill="freeze"/>l</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.65s" fill="freeze"/>y</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.70s" fill="freeze"/>s</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.75s" fill="freeze"/>i</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.80s" fill="freeze"/>s</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.85s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.90s" fill="freeze"/>|</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="2.95s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.00s" fill="freeze"/>P</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.05s" fill="freeze"/>o</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.10s" fill="freeze"/>r</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.15s" fill="freeze"/>t</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.20s" fill="freeze"/>f</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.25s" fill="freeze"/>o</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.30s" fill="freeze"/>l</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.35s" fill="freeze"/>i</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.40s" fill="freeze"/>o</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.45s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.50s" fill="freeze"/>O</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.55s" fill="freeze"/>p</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.60s" fill="freeze"/>t</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.65s" fill="freeze"/>i</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.70s" fill="freeze"/>m</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.75s" fill="freeze"/>i</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.80s" fill="freeze"/>z</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.85s" fill="freeze"/>a</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.90s" fill="freeze"/>t</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="3.95s" fill="freeze"/>i</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.00s" fill="freeze"/>o</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.05s" fill="freeze"/>n</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.10s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.15s" fill="freeze"/>|</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.20s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.25s" fill="freeze"/>S</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.30s" fill="freeze"/>t</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.35s" fill="freeze"/>o</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.40s" fill="freeze"/>c</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.45s" fill="freeze"/>k</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.50s" fill="freeze"/> </tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.55s" fill="freeze"/>M</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.60s" fill="freeze"/>a</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.65s" fill="freeze"/>r</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.70s" fill="freeze"/>k</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.75s" fill="freeze"/>e</tspan><tspan visibility="hidden"><animate attributeName="visibility" from="hidden" to="visible" begin="4.80s" fill="freeze"/>t</tspan></text>
+  <!-- Description with CSS fade-in -->
+  <text class="descText" x="60" y="7.0" text-anchor="middle" font-family="Helvetica" font-size="1.5px" fill="white" opacity="0.8" font-style="italic">Data Analysis | Portfolio Optimization | Stock Market</text>
   
   <!-- Greeting text -->
   <text x="2" y="21.5" font-family="Helvetica" font-size="3.5px" fill="#888888" font-weight="bold">Hi there!</text>

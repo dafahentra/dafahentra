@@ -174,17 +174,22 @@ g.typingUnderline rect {
     <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
   </g>  
 
-<rect class="headerRect" width="80" height="7.3" rx="1" x="15" y="16.8"/>
+<path id="nameTyping">
+  <animate attributeName="d" from="m45,-6 h0" to="m45,-6 h100" dur="9.4s" begin="0s" fill="freeze"/>
+</path>
 
-<text x="38" y="-6" font-family="Courier New" font-size=".22em" fill="white"
+<text font-family="Courier New" font-size=".22em" fill="white"
       font-weight="bold" letter-spacing="2">
+  <textPath xlink:href="#nameTyping" >
       DAFA HENTRA
+  </textPath>
 </text>
 
-<text x="30" y="-3" font-family="Helvetica" font-size=".12em" fill="white"
-     alignment-baseline="hanging" font-style="italic" > 
-      Data Analysis, Portfolio Optimization, Stock Market
-</text>
+<g class="typingUnderline">
+  <rect fill="#FFFFFF" x="69" y="20.5" width="2.5" height="0.4" xlink:href="#underlineTyping">
+      <animate attributeName="visible" from="hidden" to="visible" dur="1s" fill="freeze"/>
+  </rect>
+</g>
 
 <text x="2" y="12" font-family="Helvetica" font-size=".22em" 
       fill="#AAA" font-weight="bold"> 

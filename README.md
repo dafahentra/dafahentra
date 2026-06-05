@@ -26,22 +26,7 @@ hello! i'm Dafa Hentra, here's a little about me:
 
 <p></p>
 
-<h1>
-  i was a frontend intern at chess.com ♟️
-</h1>
 
-<p align="center">
-  <a href="https://www.chess.com/member/dafahentra">
-    <img src="https://raw.githubusercontent.com/dafahentra/dafahentra/master/example/chess-games.svg">
-    <!-- This is how you'd make the call dynamically <img src="https://readme.dafahentra.com/api/chess-games"> -->
-  </a>
-</p>
-
-<p align="center">
-  <i>luckily being good at chess wasn't a pre-req to the job</i>
-</p>
-
-<p></p>
 
 <h1>
   i'm a vue.js fanboy, but i do some other stuff too :hammer:

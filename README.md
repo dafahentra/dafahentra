@@ -1,16 +1,30 @@
-## Hi there 👋
+hello! here's a little about me:
 
-<!--
-**dafahentra/dafahentra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1>
+  i really like music :headphones:
+</h1>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="https://YOUR-NETLIFY-SITE.netlify.app/api/now-playing?open">
+    <!-- Music bars move to the beat and are colored based on the track's happiness, danceability and energy! -->
+    <img src="https://YOUR-NETLIFY-SITE.netlify.app/api/now-playing">
+  </a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <img src="https://YOUR-NETLIFY-SITE.netlify.app/api/top-played">
+</p>
+
+<p align="center">
+  <i>powered by <a href="https://github.com/andyruwruw/andyruwruw">andyruwruw/andyruwruw</a></i>
+</p>
+
+<p></p>
+
+<h1>
+  i do some cool stuff :hammer:
+</h1>
+
+<p align="center">
+  <img src="https://YOUR-NETLIFY-SITE.netlify.app/api/skills">
+</p>
